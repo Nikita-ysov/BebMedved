@@ -1,92 +1,101 @@
+@font-face {
+    font-family: ;
+    font-weight: 400;
+    font-size: 68px;
+    src: url("../fonts/Wattauchimma.woff2") format("woff2");
+    font-display: swap;
+}
+   
+
 
 /*основные */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  } 
-header{
-   background-color: black;
+}
+
+/*голова */
+header {
+    width: auto;
+    height: 72px;
+    padding: 16px 72px;
+    background-color: black;
+}
+
+.container__page-heder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-footer{
-   background-color: black;
+
+/*подвал */
+footer {
+    width: auto;
+    height: 120px;
+    top: 19px;
+    background-color: black;
 }
+
+.container-page-footer {
+    display: flex;
+}
+
+.footer-logo {
+    margin: 34px 72px;
+}
+
+.p-footer {
+    text-align: center;
+    margin-top: 24px;
+    color: aliceblue;
+}
+
+.a-footer {
+    color: aliceblue;
+}
+
+.footer-social {
+    display: flex;
+    margin: 42px 72px;
+}
+
+.footer-social-list {
+    gap: 8px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+/*слайдер   */
+.slider {
+   
+}
+
+
 /*форма  */
 .form-group {
     margin-bottom: 15px;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
 }
-select, input[type="email"], input[type="tel"] {
+
+select,
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
 }
+
 input[type="submit"] {
     padding: 10px 15px;
     background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
-}
-/*слайдер   */
-.slider {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.nav-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 24px;
-}
-
-.nav-button.left {
-    left: 10px;
-}
-
-.nav-button.right {
-    right: 10px;
-}
-
-.indicator {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.indicator span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-color: lightgray;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.indicator span.active {
-    background-color: gray;
 }
