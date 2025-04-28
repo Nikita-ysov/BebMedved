@@ -21,114 +21,176 @@
   <main>
 
     <div class="slider">
-      
-        <p>Хотите 10% скидку?  Успейте до завершения акции!</p>
-        <p>Успейте внести предоплату за услуги до 1 декабря 2025 года  и получите гарантированную скидку 10%.
-          Подробности акции узнайте по телефону.</p>
-        <div class="slide"><img src="img/img slaider.png" alt="" width="100%"></div>
+      <div class="slides">
+          <div class="slide active">
+              <img src="img/img slaider.png" alt="Image 1" width="100%">
+              <div class="text">Хотите 10% скидку? Успейте до завершения акции! Успейте внести предоплату за услуги до 1 декабря 2025 года и получите гарантированную скидку 10%. Подробности акции узнайте по телефону.</div>
+            </div>
+          </div>
+          <div class="slide">
+              <img src="#" alt="#" width="100%">
+              <div class="text"></div>
+          </div>
+          <div class="slide">
+              <img src="#" alt="#" width="100%">
+              <div class="text"></div>
+          </div>
       </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      <div class="indicator">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+  </div>
 
-    <div class="">
-      <section>
-      <h1>Преимущества работы с нами</h1>
-    </section>
-    <section>
-      <a href="#" class="">Для Ип</a>
-      <a href="#" class="">Для ООО</a>
-    </section>
-<section class="">
-      <ul class="">
-        <li class="">
-          <p>1</p>
-          <p>Lorem ipsum</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-        </li>
-        <li class="">
-          <p>2</p>
-          <p>Dolor sit</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation </p>
-        </li>
-        <li class="">
-          <p>3</p>
-          <p>Consectetur adipiscing elit</p>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. </p>
-        </li>
-        <li class="">
-          <p>4</p>
-          <p>Sunt in culpa qui</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum. </p>
-        </li>
-        <li class="">
-          <p>5</p>
-          <p>Iusmod tempor incididunt </p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore </p>
-        </li>
-      </ul>
-    </section>
-    </div>
-
-    <div class="">
-      <section class="" >
-        <p>
-          Нужна помощь?  Заполните форму и мы свяжемся с вами!
-        </p>
-        <p>
-          Успейте внести предоплату за услуги до 1 декабря 2025 года и получите гарантированную скидку 10%.
-          Подробности акции узнайте по телефону.
-        </p>
+    <div class="container">
+      <section class="advantages">
+        <h1 class="advantages-title">Преимущества работы с нами</h1>
       </section>
-      <section class="">
-        <h1>Форма обратной связи</h1>
-        <form>
-          <div class="form-group">
-            <label for="organizationType">Тип вашей организации:</label>
-            <select id="organizationType" name="organizationType" required>
-              <option value="" disabled selected>Выберите тип</option>
-              <option value="company">Компания</option>
-              <option value="individual">Индивидуальный предприниматель</option>
-              <option value="ngo">Неправительственная организация</option>
-              <option value="government">Государственная организация</option>
-            </select>
-          </div>
 
-          <div class="form-group">
-            <label for="email">Е-mail:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="country-selector">
-            <select id="country-select">
-              <option value="+7" data-flag="🇷🇺">Россия (+7)</option>
-              <option value="+1" data-flag="🇺🇸">США (+1)</option>
-              <option value="+44" data-flag="🇬🇧">Великобритания (+44)</option>
-              <option value="+49" data-flag="🇩🇪">Германия (+49)</option>
-              <option value="+7" data-flag="🇧🇾">Беларусь (+375)</option>
-              <!-- добавьте здесь другие страны -->
-            </select>
-            <label for="phone">Номер телефона:</label>
-            <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-          </div>
-          <div class="form-group">
-            <label for="projectCount">Количество проектов:</label>
-            <select id="projectCount" name="projectCount" required>
-              <option value="" disabled selected>Выберите количество</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="more">Больше 3</option>
-            </select>
-          </div>
-
-          <input type="submit" value="Отправить">
-        </form>
+      <section class="links">
+        <a href="#" class="link">Для ИП</a>
+        <a href="#" class="link">Для ООО</a>
+      </section>
+      <section class="benefits">
+        <ul class="benefits-list">
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">1</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Lorem ipsum</p>
+                <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">2</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Dolor sit</p>
+                <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">3</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Consectetur adipiscing elit</p>
+                <p class="benefit-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">4</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Sunt in culpa qui</p>
+                <p class="benefit-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">5</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Iusmod tempor incididunt</p>
+                <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
-  </main>
+
+
+      <div class="">
+        <section class="">
+          <p>
+            Нужна помощь?  Заполните форму и мы свяжемся с вами!
+          </p>
+          <p>
+            Успейте внести предоплату за услуги до 1 декабря 2025 года и получите гарантированную скидку 10%.
+            Подробности акции узнайте по телефону.
+          </p>
+        </section>
+        <div class="contact-form">
+          <h2>Форма обратной связи</h2>
+          <form id="firstForm">
+              <div class="form-group">
+                  <label for="organizationType">Тип вашей организации:</label>
+                  <select id="organizationType" required>
+                      <option value="" disabled selected>Выберите тип</option>
+                      <option value="ip">ИП</option>
+                      <option value="ooo">ООО</option>
+                      <option value="other">Другое</option>
+                  </select>
+              </div>
+      
+              <div class="form-group">
+                  <label for="email">E-mail:</label>
+                  <input type="email" id="email" required placeholder="Введите ваш e-mail">
+              </div>
+      
+              <div class="form-group">
+                  <label for="country">Выбор страны:</label>
+                  <select id="country" required>
+                      <option value="" disabled selected>Выберите страну</option>
+                      <option value="ru">Россия</option>
+                      <option value="us">США</option>
+                      <option value="de">Германия</option>
+                      <!-- Добавьте другие страны по необходимости -->
+                  </select>
+              </div>
+      
+              <div class="form-group">
+                  <label for="phoneCode">Код страны:</label>
+                  <select id="phoneCode" required>
+                      <option value="+7">+7 (Россия)</option>
+                      <option value="+1">+1 (США)</option>
+                      <option value="+49">+49 (Германия)</option>
+                      <!-- Добавьте другие коды по необходимости -->
+                  </select>
+      
+                  <label for="phoneNumber">Номер телефона:</label>
+                  <input type="tel" id="phoneNumber" required placeholder="Введите номер телефона">
+              </div>
+      
+              <div class="form-group">
+                  <label for="projectCount">Количество проектов:</label>
+                  <input type="number" id="projectCount" min="1" required placeholder="Введите количество проектов">
+              </div>
+      
+              <button type="submit">Продолжить</button>
+          </form>
+      
+          <!-- Вторая форма -->
+          <form id="secondForm" style="display: none;">
+              <h2>Дополнительная информация</h2>
+      
+              <div class="form-group">
+                  <label for="name">Имя:</label>
+                  <input type="text" id="name" required placeholder="Введите ваше имя">
+              </div>
+      
+              <div class="form-group">
+                  <label for="comment">Комментарий:</label>
+                  <textarea id="comment" rows="4" required placeholder="Введите ваш комментарий"></textarea>
+              </div>
+      
+              <button type="submit">Отправить</button>
+          </form>
+      </div>
+       
 
 
   <footer class="page-footer">
