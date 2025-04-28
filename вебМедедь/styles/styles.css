@@ -20,6 +20,7 @@
 
 /*голова */
 header {
+
     width: auto;
     height: 72px;
     padding: 16px 72px;
@@ -37,7 +38,6 @@ header {
 footer {
     width: auto;
     height: 120px;
-
     background-color: black;
 }
 
@@ -53,7 +53,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin: 24px 282px 24px 338px;
     color: aliceblue;
 }
@@ -78,51 +77,61 @@ footer {
 /*слайдер   */
 
 .slider {
+    width: 1296px;
+    height: 434px;
     position: relative;
-    max-width: 600px; /* Ширина слайдера */
-    margin: auto;
-    overflow: hidden; /* Скрываем лишнее */
+    margin: 30px;
+    overflow: hidden;
+
 }
 
 .slides {
-    display: flex; /* Используем flexbox для горизонтального расположения слайдов */
-    transition: transform 0.5s ease; /* Плавный переход между слайдами */
+    display: flex;
+    transition: transform 0.5s ease;
+
 }
 
 .slide {
-    min-width: 100%; /* Каждый слайд занимает всю ширину контейнера */
+    min-width: 100%;
     position: relative;
 }
 
 .text {
+    width: 606px;
+    height: 215px;
+    gap: 16px;
     position: absolute;
-    bottom: 20px; /* Расположение текста */
+    bottom: 20px;
     left: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для текста */
     padding: 10px;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
-    position: absolute;
+
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: red;
+    background-color: bisque;
     font-size: 18px;
 }
 
 .prev {
-    left: 10px; /* Положение кнопки "Назад" */
+    left: 10px;
+
 }
 
 .next {
-    right: 10px; /* Положение кнопки "Вперед" */
+    right: 10px;
+
 }
 
 .indicator {
     text-align: center;
-    padding-top: 10px; /* Отступ сверху для индикатора */
+    padding-top: 10px;
+
 }
 
 .dot {
@@ -130,39 +139,42 @@ footer {
     height: 12px;
     width: 12px;
     margin: 0 2px;
-    background-color: #bbb; /* Цвет неактивного индикатора */
-    border-radius: 50%; /* Круглая форма */
+    background-color: white;
+
+    border-radius: 50%;
+
 }
 
 .active {
-    background-color: #717171; /* Цвет активного индикатора */
+    background-color: yellow;
+
 }
 
 /*сылки */
 .container {
     text-align: center;
-    
+
 }
 
 .advantages-title {
-  
+
     margin-bottom: 20px;
-    
+
 }
 
 .links {
     display: flex;
-    
+
     justify-content: center;
-    
+
 }
 
 .link {
     margin: 0 10px;
-    
-   
+
+
     color: darkgoldenrod;
-    
+
 }
 
 
@@ -196,6 +208,7 @@ footer {
 }
 
 .benefit-number {
+    margin-bottom: 8px;
     font-size: 24px;
     font-weight: bold;
 }
@@ -205,6 +218,7 @@ footer {
 }
 
 .benefit-title {
+    margin-bottom: 8px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -215,65 +229,126 @@ footer {
 }
 
 /*форма  */
+
+.step-indicator {
+    height: 4px; /* Высота линии */
+    background-color: yellow; /* Цвет линии */
+    margin: 10px 0; /* Отступы сверху и снизу */
+}
 .contact-form {
     width: 636px;
-    height: auto; /* Высота будет зависеть от содержимого */
+    height: auto;
+
     border-radius: 12px;
     padding: 24px;
-    background-color: #f9f9f9; /* Цвет фона формы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    background-color: #f9f9f9;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .form-group {
-    margin-bottom: 24px; /* Отступ между полями */
+    margin-bottom: 24px;
+
 }
 
 .form-group label {
-    display: block; /* Метки занимают всю ширину */
-    margin-bottom: 8px; /* Отступ под меткой */
+    display: block;
+
+    margin-bottom: 8px;
+
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: calc(100% - 16px); /* Ширина полей с учетом отступов */
-    padding: 8px; /* Отступ внутри полей */
-    border-radius: 4px; /* Скругление углов полей */
-    border: 1px solid #ccc; /* Граница полей */
+    width: calc(100% - 16px);
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+    border: 1px solid #ccc;
+
 }
 
 button {
-    padding: 10px 20px; /* Отступы кнопки */
-    background-color: #007BFF; /* Цвет кнопки */
-    color: white; /* Цвет текста кнопки */
-    border: none; /* Убираем границу у кнопки */
-    border-radius: 4px; /* Скругление углов кнопки */
-    cursor: pointer; /* Курсор при наведении на кнопку */
+    padding: 10px 20px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
 }
 
 button:hover {
-    background-color: #0056b3; /* Цвет кнопки при наведении */
+    background-color: gray;
+
 }
+
+/* текст с права */
+.help-message {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.text-message {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.promo-message {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
 /* выравниваение */
 
 .container-text {
-    display: flex; /* Используем Flexbox для расположения элементов */
-    justify-content: space-between; /* Распределяем пространство между элементами */
-    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
-    padding: 20px; /* Отступы вокруг контейнера */
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 20px;
+
 }
 
 .help-section {
-    flex: 1; /* Занимает доступное пространство */
-    margin-right: 20px; /* Отступ справа от секции помощи */
+    flex: 1;
+
+    margin-right: 20px;
+
 }
 
 .contact-form {
-    flex: 1; /* Занимает доступное пространство */
-    max-width: 400px; /* Максимальная ширина формы */
+    flex: 1;
+
+    max-width: 400px;
+
 }
 
 .form-group {
-    margin-bottom: 15px; /* Отступ между группами формы */
-}
+    margin-bottom: 15px;
 
+}
