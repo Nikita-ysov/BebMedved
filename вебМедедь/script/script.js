@@ -27,7 +27,7 @@ function currentSlide(n) {
 
 // Инициализация первого слайда
 showSlides(currentIndex);
-// форма
+// форма 
 
 document.getElementById('firstForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Предотвращаем отправку формы

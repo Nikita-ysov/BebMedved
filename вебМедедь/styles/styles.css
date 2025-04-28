@@ -254,3 +254,26 @@ button {
 button:hover {
     background-color: #0056b3; /* Цвет кнопки при наведении */
 }
+/* выравниваение */
+
+.container-text {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    padding: 20px; /* Отступы вокруг контейнера */
+}
+
+.help-section {
+    flex: 1; /* Занимает доступное пространство */
+    margin-right: 20px; /* Отступ справа от секции помощи */
+}
+
+.contact-form {
+    flex: 1; /* Занимает доступное пространство */
+    max-width: 400px; /* Максимальная ширина формы */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Отступ между группами формы */
+}
+
