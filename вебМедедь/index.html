@@ -52,10 +52,11 @@
       </section>
 
       <section class="links">
-        <a href="#" class="link">Для ИП</a>
-        <a href="#" class="link">Для ООО</a>
+        <a href="#" class="link" id="link-ip">Для ИП</a>
+        <a href="#" class="link" id="link-oo">Для ООО</a>
       </section>
-      <section class="benefits">
+
+      <section class="benefits" id="benefits-ip">
         <ul class="benefits-list">
           <li class="benefit-item">
             <div class="benefit-content">
@@ -111,24 +112,86 @@
           </li>
         </ul>
       </section>
+
+
+      <section class="benefits" id="benefits-oo" style="display: none;">
+        <ul class="benefits-list">
+          <!-- Список для ООО -->
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">1</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Дание само</p>
+                <p class="benefit-description">Мне жаль слышать о вашем посте, но я собираюсь попробовать.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">2</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Боль осталась</p>
+                <p class="benefit-description"> Мне жаль слышать о вашей боли,
+                  но мне так жаль слышать о вашей тяжелой работе и вашей боли.
+                  Что касается малейшего снисхождения, то любое упражнение - наше.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">3</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Элита</p>
+                <p class="benefit-description"> Я посторонний, я не виновен, я несу ответственность работника.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">4</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Это я во всем виноват.</p>
+                <p class="benefit-description"> Я клянусь богом, что эта заноза в заднице не прошла бы без родителей.
+                  Я посторонний, я не виновен, я несу ответственность работника.</p>
+              </div>
+            </div>
+          </li>
+          <li class="benefit-item">
+            <div class="benefit-content">
+              <p class="benefit-number">5</p>
+              <div class="benefit-text">
+                <p class="benefit-title">Аль-Каида</p>
+                <p class="benefit-description"> Мне жаль слышать о твоей боли, но мне так жаль слышать о твоей боли и
+                  страданиях.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
 
+    <div class="container-page">
+      <div class="container-text">
+        <section class="help-section">
+          <p class="help-message">
+            Нужна помощь? </p>
+          <span class="text-message"> Заполните форму и мы свяжемся с вами!</span>
 
-
-    <div class="container-text">
-      <section class="help-section">
-        <p class="help-message">
-          Нужна помощь? </p>
-        <span class="text-message"> Заполните форму и мы свяжемся с вами!</span>
-
-        <p class="promo-message">
-          Успейте внести предоплату за услуги до 1 декабря 2025 года и получите гарантированную скидку 10%.
-          Подробности акции узнайте по телефону.
-        </p>
-      </section>
+          <p class="promo-message">
+            Успейте внести предоплату за услуги до 1 декабря 2025 года и получите гарантированную скидку 10%.
+            Подробности акции узнайте по телефону.
+          </p>
+        </section>
+      </div>
 
       <div class="contact-form">
         <h2>Форма обратной связи</h2>
+        <!-- Шаги формы -->
+        <div class="step-indicator">
+          <div class="step active">Шаг 1</div>
+          <div class="step">Шаг 2</div>
+
+        </div>
         <form id="firstForm">
           <div class="form-group">
             <label for="organizationType">Тип вашей организации:</label>
@@ -168,7 +231,7 @@
 
         <!-- Вторая форма -->
         <form id="secondForm" style="display: none;">
-          
+
 
           <div class="form-group">
             <label for="name">Имя:</label>

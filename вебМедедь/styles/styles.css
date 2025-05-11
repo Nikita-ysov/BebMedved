@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2");
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../fonts/Inter-Italic-VariableFont_opsz\,wght.woff2") format("woff2");
+    src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf") format("woff2");
     font-display: swap;
 }
 
@@ -34,6 +34,16 @@ header {
 
 }
 
+.header-logo {
+    transition: fill 0.3s;
+
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+
 /*подвал */
 footer {
     width: auto;
@@ -41,38 +51,79 @@ footer {
     background-color: black;
 }
 
+.page-footer {
+    padding: 20px 0;
+}
+
 .container-page-footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 72px;
 }
 
 .footer-logo {
-    margin: 34px 72px;
+    flex: 1;
+    transition: fill 0.3s;
+
+}
+
+.footer-logo :hover {
+    transform: scale(1.1);
 }
 
 .p-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 24px 282px 24px 338px;
-    color: aliceblue;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: #f9f9f9;
+    flex: 2;
 }
 
 .a-footer {
-    color: aliceblue;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.a-footer:hover {
+    color: yellow;
 }
 
 .footer-social {
-    display: flex;
+    flex: 1;
+
 }
 
 .footer-social-list {
-    margin: 42px 72px 42px;
-    gap: 8px;
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.footer-social-item {
+    margin-left: 8px;
 
 }
+
+.img-footer {
+    transition: fill 0.3s;
+}
+
+.img-footer:hover {
+    transform: scale(1.1);
+}
+
+
+
+
 
 /*слайдер   */
 
@@ -145,42 +196,54 @@ footer {
 
 }
 
-.active {
-    background-color: yellow;
+.dot.active {
+    background-color: rebeccapurple;
 
 }
 
-/*сылки */
-.container {
-    text-align: center;
-
-}
+/*сылки  */
 
 .advantages-title {
-
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    text-align: center;
     margin-bottom: 20px;
 
 }
 
 .links {
     display: flex;
-
     justify-content: center;
+
 
 }
 
 .link {
-    margin: 0 10px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(205, 205, 205, 1);
+    margin: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(205, 205, 205, 1);
+    padding-bottom: 4px;
+}
 
-
-    color: darkgoldenrod;
-
+.link.active {
+    color: rgba(251, 190, 3, 1);
+    border-bottom: 2px solid rgba(251, 190, 3, 1);
 }
 
 
 
 
-/*текст  */
+/*текст под сылкой */
 .benefits {
     padding: 20px;
 }
@@ -193,8 +256,6 @@ footer {
 }
 
 .benefit-item {
-
-
     border-radius: 5px;
     padding: 15px;
     margin-right: 15px;
@@ -208,9 +269,14 @@ footer {
 }
 
 .benefit-number {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
     margin-bottom: 8px;
-    font-size: 24px;
-    font-weight: bold;
+
 }
 
 .benefit-text {
@@ -218,31 +284,38 @@ footer {
 }
 
 .benefit-title {
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
     margin-bottom: 8px;
-    font-size: 18px;
-    font-weight: bold;
+
 }
 
 .benefit-description {
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
     font-size: 14px;
 
 }
 
 /*форма  */
 
-.step-indicator {
-    height: 4px; /* Высота линии */
-    background-color: yellow; /* Цвет линии */
-    margin: 10px 0; /* Отступы сверху и снизу */
-}
 .contact-form {
     width: 636px;
     height: auto;
-
     border-radius: 12px;
     padding: 24px;
     background-color: #f9f9f9;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
@@ -273,17 +346,25 @@ footer {
 }
 
 button {
-    padding: 10px 20px;
-
+    width: 588px;
+    height: 46px;
+    gap: 10px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 48px;
+    padding-bottom: 12px;
+    padding-left: 48px;
     background-color: black;
-
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
     color: white;
 
-    border: none;
-
-    border-radius: 4px;
-
-    cursor: pointer;
 
 }
 
@@ -292,7 +373,22 @@ button:hover {
 
 }
 
-/* текст с права */
+/* текст с  лева  */
+.container-page {
+    display: flex;
+    /* Используем Flexbox для выравнивания */
+    justify-content: space-between;
+    /* Распределяем элементы по краям */
+    align-items: flex-start;
+    /* Выравниваем элементы по верхнему краю */
+    max-width: 1200px;
+    /* Максимальная ширина контейнера */
+    margin: 0 auto;
+    /* Центрируем контейнер */
+    padding: 20px;
+    /* Отступы внутри контейнера */
+}
+
 .help-message {
     font-family: "Inter";
     font-weight: 700;
@@ -321,34 +417,15 @@ button:hover {
 
 }
 
-/* выравниваение */
 
 .container-text {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: flex-start;
-
-    padding: 20px;
-
-}
-
-.help-section {
     flex: 1;
-
+    /* Текст занимает одну часть пространства */
     margin-right: 20px;
-
+    /* Отступ между текстом и формой */
 }
 
 .contact-form {
     flex: 1;
-
-    max-width: 400px;
-
-}
-
-.form-group {
-    margin-bottom: 15px;
-
+    /* Форма занимает одну часть пространства */
 }
