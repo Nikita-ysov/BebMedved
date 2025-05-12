@@ -1,0 +1,470 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf") format("woff2");
+    font-display: swap;
+}
+
+
+/*основные */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*голова */
+header {
+
+    width: auto;
+    height: 72px;
+    padding: 16px 72px;
+    background-color: black;
+}
+
+.container__page-heder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-logo {
+    transition: fill 0.3s;
+
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+
+/*подвал */
+footer {
+    width: auto;
+    height: 120px;
+    background-color: black;
+}
+
+.page-footer {
+    padding: 20px 0;
+}
+
+.container-page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 72px;
+}
+
+.footer-logo {
+    flex: 1;
+    transition: fill 0.3s;
+
+}
+
+.footer-logo :hover {
+    transform: scale(1.1);
+}
+
+.p-footer {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: #f9f9f9;
+    flex: 2;
+}
+
+.a-footer {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.a-footer:hover {
+    color: yellow;
+}
+
+.footer-social {
+    flex: 1;
+
+}
+
+.footer-social-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-social-item {
+    margin-left: 8px;
+
+}
+
+.img-footer {
+    transition: fill 0.3s;
+}
+
+.img-footer:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/*слайдер   */
+
+.text-slider-sale {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.text-slider {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+
+}
+
+.slider {
+    width: 1296px;
+    height: 434px;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.text {
+    position: absolute; /* Позиционируем текст поверх изображения */
+    bottom: 20px; /* Отступ от нижней части слайда */
+    left: 20px; /* Отступ от левой части слайда */
+    color: white; /* Цвет текста */
+    width: 606px;
+    height: 215px;
+    top: 229px;
+    left: 136px;
+    gap: 16px;
+    margin: ;
+}
+
+
+
+
+
+.controls {
+    position: absolute;
+    /* Позиционируем элементы управления относительно слайдера */
+    top: 50%;
+    /* Центрируем по вертикали */
+    left: 50%;
+    /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%);
+    /* Сдвигаем на половину ширины и высоты для точного центрирования */
+}
+
+/* стрелки */
+.prev,
+.next {
+    
+    cursor: pointer;
+    color: #f9f9f9;
+    width: 16px;
+    height: 8px;
+    top: 8px;
+    left: 12px;
+    border-width: 3px;
+
+}
+
+
+.indicator {
+    display: flex;
+    /* Используем flexbox для выравнивания индикаторов */
+    justify-content: center;
+    /* Центрируем индикаторы по горизонтали */
+    padding-top: 10px;
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* точки*/
+.dot {
+
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.dot.active {
+    background-color: #FBBE03;
+
+}
+
+
+
+
+
+/*сылки  */
+
+.advantages-title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.link {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(205, 205, 205, 1);
+    margin: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(205, 205, 205, 1);
+    padding-bottom: 4px;
+}
+
+.link.active {
+    color: rgba(251, 190, 3, 1);
+    border-bottom: 2px solid rgba(251, 190, 3, 1);
+}
+
+
+
+
+/*текст под сылкой */
+.benefits {
+    padding: 20px;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.benefit-item {
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.benefit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-number {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.benefit-text {
+    text-align: center;
+}
+
+.benefit-title {
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+
+.benefit-description {
+
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(128, 128, 128, 1);
+    font-size: 14px;
+
+}
+
+/*форма  */
+.form-title {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+
+.contact-form {
+    width: 636px;
+    height: auto;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #F8F8F8;
+    ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-group {
+    margin-bottom: 24px;
+
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 16px);
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+    border: 1px solid #ccc;
+
+}
+
+button {
+    width: 588px;
+    height: 46px;
+    gap: 10px;
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-right: 48px;
+    padding-bottom: 12px;
+    padding-left: 48px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+
+
+}
+
+button:hover {
+    background-color: gray;
+
+}
+
+
+
+
+
+
+/* текст с  лева  */
+.container-page {
+    display: flex;
+    justify-content: center;
+    /* Центрирование содержимого */
+    margin: 114px 72px 128px 72px;
+}
+
+.content-wrapper {
+    display: flex;
+    /* Используем Flexbox для расположения текста и формы */
+}
+
+.container-text {
+    width: 526;
+    height: 271;
+    gap: 16px;
+
+
+    margin: 123px 134px 123px 0px;
+
+}
+
+.help-message {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.text-message {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.promo-message {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
