@@ -28,6 +28,23 @@ document.getElementById('firstForm').addEventListener('submit', function(event) 
     document.getElementById('firstForm').style.display = 'none';
     document.getElementById('secondForm').style.display = 'block';
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const firstForm = document.getElementById('firstForm');
+    const secondForm = document.getElementById('secondForm');
+    const confirmationMessage = document.querySelector('.confirmation-message');
+
+    firstForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      firstForm.style.display = 'none';
+      secondForm.style.display = 'block';
+    });
+
+    secondForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      confirmationMessage.style.display = 'block';
+      secondForm.style.display = 'none';
+    });
+  });
 // сылки 
 
     document.addEventListener("DOMContentLoaded", function() {

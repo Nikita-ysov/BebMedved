@@ -177,62 +177,75 @@ footer {
     gap: 16px;
 
 }
+
 /* Контейнер для изображения */
 .img-container {
-  width: 100%; /* занимает всю ширину слайда */
-  overflow: hidden; /* чтобы изображение не выходило за границы */
+    width: 100%;
+    /* занимает всю ширину слайда */
+    overflow: hidden;
+    /* чтобы изображение не выходило за границы */
 }
 
 /* Изображение */
 .img-container img {
-  width: 100%; /* растягивается на всю ширину контейнера */
-  height: auto; /* сохраняет пропорции изображения */
-  display: block; /* убирает возможные пробелы снизу */
+    width: 100%;
+    /* растягивается на всю ширину контейнера */
+    height: auto;
+    /* сохраняет пропорции изображения */
+    display: block;
+    /* убирает возможные пробелы снизу */
 }
+
 /* Общий контейнер навигации */
 .swiper-navigation {
-  position: absolute;
-  bottom: 10px; /* или другой отступ снизу */
-  width: 100%;
-  display: flex;
-  justify-content: space-between; /* Распределяет стрелки слева и точки справа */
-  align-items: center;
-  padding: 0 20px; /* Отступы по бокам, чтобы не прилипали к краям */
-  box-sizing: border-box;
-  z-index: 10; /* чтобы навигация была поверх слайдов */
+    position: absolute;
+    bottom: 10px;
+    /* или другой отступ снизу */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Распределяет стрелки слева и точки справа */
+    align-items: center;
+    padding: 0 20px;
+    /* Отступы по бокам, чтобы не прилипали к краям */
+    box-sizing: border-box;
+    z-index: 10;
+    /* чтобы навигация была поверх слайдов */
 }
 
 /* Стрелки — слева */
 .swiper-button-prev,
 .swiper-button-next {
-  position: relative; /* внутри контейнера, без абсолютного позиционирования */
-  width: calc(var(--swiper-navigation-size)/44*27);
-  height: var(--swiper-navigation-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    /* внутри контейнера, без абсолютного позиционирования */
+    width: calc(var(--swiper-navigation-size)/44*27);
+    height: var(--swiper-navigation-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Точки пагинации — справа */
 .swiper-pagination {
-  display: flex;
-  gap: 8px; /* расстояние между точками */
+    display: flex;
+    gap: 8px;
+    /* расстояние между точками */
 }
 
 /* Размер точек */
 .swiper-pagination-bullet {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 /* Неактивные точки — белого цвета */
 .swiper-pagination-bullet {
-  background-color: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 /* Активная точка — желтого цвета */
 .swiper-pagination-bullet-active {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 
@@ -345,7 +358,12 @@ footer {
 }
 
 /*форма  */
-
+.confirmation-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 .form-title {
     font-family: Montserrat;
@@ -360,12 +378,16 @@ footer {
 
 .contact-form {
     width: 636px;
-    height: auto;
+    height: 517px;
     border-radius: 12px;
-    padding: 24px;
-    background-color: #F8F8F8;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    gap: 24px;
+    background: rgba(248, 248, 248, 1);
+
     ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -435,7 +457,8 @@ button:hover {
     margin-right: auto;
     width: 100%;
     box-sizing: border-box;
-  }
+}
+
 .content-wrapper {
     display: flex;
     /* Используем Flexbox для расположения текста и формы */
