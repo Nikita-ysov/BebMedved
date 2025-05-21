@@ -93,7 +93,7 @@ footer {
 }
 
 .a-footer:hover {
-    color: yellow;
+    color: gray;
 }
 
 .footer-social {
@@ -127,106 +127,113 @@ footer {
 
 /*слайдер   */
 
-.text-slider-sale {
+.swiper {
+    width: 1296px;
+    height: 434px;
+    margin-top: 5px;
+}
+
+.sale-offer {
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
     line-height: 140%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #FFFFFF;
+
 }
 
-.text-slider {
+.urgent-message {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+}
+
+.promo-details {
     font-family: Inter;
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
     letter-spacing: 0%;
     vertical-align: middle;
-    color: #FFFFFF;
 
 }
 
-.slider {
-    width: 1296px;
-    height: 434px;
-    position: relative;
-    margin: 30px auto;
-    overflow: hidden;
-}
-.text {
-    position: absolute; /* Позиционируем текст поверх изображения */
-    bottom: 20px; /* Отступ от нижней части слайда */
-    left: 20px; /* Отступ от левой части слайда */
-    color: white; /* Цвет текста */
+.slide-text {
+    color: #F8F8F8;
+    position: absolute;
+    /* размещение поверх изображения */
+    display: flex;
+    flex-direction: column;
+    /* расположить элементы вертикально друг за другом */
     width: 606px;
     height: 215px;
-    top: 229px;
+    top: 129px;
     left: 136px;
     gap: 16px;
-    margin: ;
-}
-
-
-
-
-
-.controls {
-    position: absolute;
-    /* Позиционируем элементы управления относительно слайдера */
-    top: 50%;
-    /* Центрируем по вертикали */
-    left: 50%;
-    /* Центрируем по горизонтали */
-    transform: translate(-50%, -50%);
-    /* Сдвигаем на половину ширины и высоты для точного центрирования */
-}
-
-/* стрелки */
-.prev,
-.next {
-    
-    cursor: pointer;
-    color: #f9f9f9;
-    width: 16px;
-    height: 8px;
-    top: 8px;
-    left: 12px;
-    border-width: 3px;
 
 }
-
-
-.indicator {
-    display: flex;
-    /* Используем flexbox для выравнивания индикаторов */
-    justify-content: center;
-    /* Центрируем индикаторы по горизонтали */
-    padding-top: 10px;
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
+/* Контейнер для изображения */
+.img-container {
+  width: 100%; /* занимает всю ширину слайда */
+  overflow: hidden; /* чтобы изображение не выходило за границы */
 }
 
-/* точки*/
-.dot {
-
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    margin: 2px;
-    background-color: white;
-    border-radius: 50%;
+/* Изображение */
+.img-container img {
+  width: 100%; /* растягивается на всю ширину контейнера */
+  height: auto; /* сохраняет пропорции изображения */
+  display: block; /* убирает возможные пробелы снизу */
+}
+/* Общий контейнер навигации */
+.swiper-navigation {
+  position: absolute;
+  bottom: 10px; /* или другой отступ снизу */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Распределяет стрелки слева и точки справа */
+  align-items: center;
+  padding: 0 20px; /* Отступы по бокам, чтобы не прилипали к краям */
+  box-sizing: border-box;
+  z-index: 10; /* чтобы навигация была поверх слайдов */
 }
 
-.dot.active {
-    background-color: #FBBE03;
-
+/* Стрелки — слева */
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative; /* внутри контейнера, без абсолютного позиционирования */
+  width: calc(var(--swiper-navigation-size)/44*27);
+  height: var(--swiper-navigation-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Точки пагинации — справа */
+.swiper-pagination {
+  display: flex;
+  gap: 8px; /* расстояние между точками */
+}
 
+/* Размер точек */
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
+
+/* Неактивные точки — белого цвета */
+.swiper-pagination-bullet {
+  background-color: #f9f9f9;
+}
+
+/* Активная точка — желтого цвета */
+.swiper-pagination-bullet-active {
+  background-color: yellow;
+}
 
 
 
@@ -338,6 +345,8 @@ footer {
 }
 
 /*форма  */
+
+
 .form-title {
     font-family: Montserrat;
     font-weight: 400;
@@ -421,22 +430,21 @@ button:hover {
 /* текст с  лева  */
 .container-page {
     display: flex;
-    justify-content: center;
-    /* Центрирование содержимого */
-    margin: 114px 72px 128px 72px;
-}
-
+    max-width: 1296px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
 .content-wrapper {
     display: flex;
     /* Используем Flexbox для расположения текста и формы */
 }
 
 .container-text {
-    width: 526;
-    height: 271;
+    width: 526px;
+    height: 271px;
     gap: 16px;
-
-
     margin: 123px 134px 123px 0px;
 
 }
